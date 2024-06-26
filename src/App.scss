@@ -52,6 +52,7 @@
 .blackBG {
   background-color: var(--blackColor);
 }
+
 .blackText1 {
   color: var(--blackColor1);
 }
@@ -160,23 +161,28 @@ p {
 }
 
 // ======****header****======
-.header{
+.header {
   background-color: var(--blackColor1);
-  .navbar{
-    .nav-link{ 
-      color:var(--whiteColor);
+
+  .navbar {
+    .nav-link {
+      color: var(--whiteColor);
       text-transform: uppercase;
       font-size: 12px;
       padding: 0px 15px;
       font-weight: 400;
       position: relative;
-      &:hover,&:focus{
+
+      &:hover,
+      &:focus {
         color: var(--whiteColor);
-        &::after{
+
+        &::after {
           width: 60%;
-        }
+        } 
       }
-      &::after{
+
+      &::after {
         position: absolute;
         content: '';
         bottom: 0;
@@ -191,9 +197,10 @@ p {
     }
   }
 }
+
 // ======****.modal****======
-.modal{
-  .modal-content{
+.modal {
+  .modal-content {
     border-radius: 0;
   }
 }
