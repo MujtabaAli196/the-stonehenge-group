@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root {
+  --FontFamily_Oxygen: 'Oxygen', sans-serif;
+  --mainColor: #6687ba;
+  --secondaryColor: #162238;
+  --darkgreenColor: #0D210C;
+
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --blackColor1: #38383c;
+  --pragraphColor: #505050;
+  --orangeColor: #ED5500;
+  --redColor: #DE001B;
+
+  --Color1: #F3F3F3;
+  --Color2: #727B92;
+}
+
+.FontFamilyFigtree {
+  font-family: var(--FontFamily_Oxygen);
+}
+
+.mainText {
+  color: var(--mainColor);
+}
+
+.mainBG {
+  background-color: var(--mainColor);
+}
+
+.secondaryText {
+  color: var(--secondaryColor) !important;
+}
+
+.secondaryBG {
+  background-color: var(--secondaryColor);
+}
+
+.whiteText {
+  color: var(--whiteColor) !important;
+}
+
+.whiteBG {
+  background-color: var(--whiteColor) !important;
+}
+
+.blackText {
+  color: var(--blackColor);
+}
+
+.blackBG {
+  background-color: var(--blackColor);
+}
+.blackText1 {
+  color: var(--blackColor1);
+}
+
+.blackBG1 {
+  background-color: var(--blackColor1);
+}
+
+.pragraphText {
+  color: var(--pragraphColor);
+}
+
+.pragraphBG {
+  background-color: var(--pragraphColor);
+}
+
+.darkgreenText {
+  color: var(--darkgreenColor);
+}
+
+.darkgreenBG {
+  background-color: var(--darkgreenColor);
+}
+
+.orangeText {
+  color: var(--orangeColor) !important;
+}
+
+.orangeBG {
+  background-color: var(--orangeColor) !important;
+}
+
+.redText {
+  color: var(--redColor) !important;
+}
+
+.redBG {
+  background-color: var(--redColor) !important;
+}
+
+.color1Text {
+  color: var(--Color1);
+}
+
+.color1BG {
+  background-color: var(--Color1);
+}
+
+.color2Text {
+  color: var(--Color2);
+}
+
+.color2BG {
+  background-color: var(--Color2);
+}
+
+.dropShadow {
+  -webkit-box-shadow: 0px 6px 52.7px 0px rgba(22, 34, 56, 0.25);
+  -moz-box-shadow: 0px 6px 52.7px 0px rgba(22, 34, 56, 0.25);
+  box-shadow: 0px 6px 52.7px 0px rgba(22, 34, 56, 0.25);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+  font-family: var(--FontFamily_Oxygen);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  -moz-osx-font-smoothing: grayscale;
+  /* Firefox */
+  -webkit-font-smoothing: antialiased;
+  /* WebKit  */
+}
+
+body {
+  margin: 0;
+  color: var(--pragraphColor);
+  font-family: var(--FontFamily_Oxygen);
+  line-height: 28px;
+  font-size: 16px;
+  overflow: overlay;
+  /* min-height: 100vh; */
+}
+
+::selection {
+  background: transparent;
+  color: var(--mainColor);
+}
+
+p {
+  padding: 0;
+  font-family: var(--FontFamily_Oxygen);
+  font-size: 16px;
+  color: var(--pragraphColor);
+}
+
+@media(max-width:991px) {
+  p {
+    font-size: 14px;
+  }
+}
+
+// ======****header****======
+.header{
+  background-color: var(--blackColor1);
+  .navbar{
+    .nav-link{
+      color:var(--whiteColor);
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 0px 15px;
+      font-weight: 400;
+      position: relative;
+      &:hover,&:focus{
+        color: var(--whiteColor);
+        &::after{
+          width: 60%;
+        }
+      }
+      &::after{
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 15px;
+        right: 0;
+        background-color: var(--whiteColor);
+        width: 0;
+        transition: all .6s ease;
+        height: 2px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
