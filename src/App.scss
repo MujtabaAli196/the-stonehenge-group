@@ -211,6 +211,19 @@ h1.mainTitle {
   letter-spacing: 2px;
 }
 
+@media(max-width:991px) {
+  .mainTitle {
+    font-size: 30px !important;
+    line-height: normal !important;
+  }
+}
+
+@media(max-width:768px) {
+  .mainTitle {
+    font-size: 26px !important;
+  }
+}
+
 // ======****.modal****======
 .modal {
   .modal-header {
@@ -264,6 +277,22 @@ h1.mainTitle {
           color: var(--mainColor);
         }
       }
+    }
+  }
+}
+
+// 
+.footer {
+  h6.fTitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--blackColor1);
+
+    .linkF {
+      font-size: 24px;
+      font-weight: 400;
+      color: #a8a6a1;
+      text-decoration: underline !important;
     }
   }
 }

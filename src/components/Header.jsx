@@ -4,8 +4,8 @@ import { Col, Nav, Modal, Navbar } from 'react-bootstrap';
 
 // 
 import companyLogo from '../images/logo.svg';
-// import medium from '../images/medium_icon.svg';
-// import twitter from '../images/twitter.svg';
+import medium from '../images/medium.svg';
+import twitter from '../images/twitter.svg';
 import linkedin from '../images/linkedin_icon.svg';
 
 // const location = useLocation();
@@ -63,9 +63,9 @@ function MyVerticallyCenteredModalExportView(props) {
                 </div>
                 <div className='contentModol'>
                     <small className='d-block' style={{ fontSize: '14px', color:'#787878', fontWeight: 'bold', }}>Follow Us</small>
-                    {/* <Link to={'/'} className=''><img className='img-fluid' src={twitter} alt='icon'/></Link> */}
-                    <Link to={'/'} className=''><img className='img-fluid' style={{width:'30px'}} src={linkedin} alt='icon'/></Link>
-                    {/* <Link to={'/'} className=''><img className='img-fluid' src={medium} alt='icon'/></Link> */}
+                    <Link to={'/'} className='me-2'><img className='img-fluid' style={{width:'30px'}} src={twitter} alt='icon'/></Link>
+                    <Link to={'/'} className='me-2'><img className='img-fluid' style={{width:'30px'}} src={linkedin} alt='icon'/></Link>
+                    <Link to={'/'} className=''><img className='img-fluid' style={{width:'30px'}} src={medium} alt='icon'/></Link>
                 </div>
             </Modal.Body>
         </Modal>
