@@ -4,6 +4,9 @@ import { Col, Nav, Modal, Navbar } from 'react-bootstrap';
 
 // 
 import companyLogo from '../images/logo.svg';
+// import medium from '../images/medium_icon.svg';
+// import twitter from '../images/twitter.svg';
+import linkedin from '../images/linkedin_icon.svg';
 
 // const location = useLocation();
 // const isHomePage = location.pathname === '/' || location.pathname === '';
@@ -43,11 +46,28 @@ export default Header;
 function MyVerticallyCenteredModalExportView(props) {
     return (
         <Modal {...props} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
-            <Modal.Body>
-                <h6 className="fontsize18 mb-3">Export this View?</h6>
-                <p>Records from this view will be exported in the background. Once the export is complete, you'll be notified along with a link to download the exported .csv file.</p>
+            <Modal.Header closeButton>
+                <Modal.Title>Information</Modal.Title>
+            </Modal.Header>
+            <Modal.Body className='px-4 pb-4'>
+                <div className='contentModol mb-4'>
+                    <small className='d-block' style={{ fontSize: '14px', fontWeight: 'bold', }}>Send Us An Email</small>
+                    <Link to={'mailto:info@spartangroup.io'} className='infotext'>info@spartangroup.io</Link>
+                </div>
+                <div className='contentModol mb-4'>
+                    <small className='d-block' style={{ fontSize: '14px', color:'#787878', fontWeight: 'bold', }}>Find Us</small>
+                    <p className='infotext m-0'>71 Robinson Road<br/> #14-01 Singapore 028895</p>
+                </div>
+                <div className='contentModol mb-4'>
+                    <p className='infotext m-0'>9F, V-Point, 18 Tang Lung St, Causeway Bay, Hong Kong</p>
+                </div>
+                <div className='contentModol'>
+                    <small className='d-block' style={{ fontSize: '14px', color:'#787878', fontWeight: 'bold', }}>Follow Us</small>
+                    {/* <Link to={'/'} className=''><img className='img-fluid' src={twitter} alt='icon'/></Link> */}
+                    <Link to={'/'} className=''><img className='img-fluid' style={{width:'30px'}} src={linkedin} alt='icon'/></Link>
+                    {/* <Link to={'/'} className=''><img className='img-fluid' src={medium} alt='icon'/></Link> */}
+                </div>
             </Modal.Body>
-            <Modal.Footer className="">Footer</Modal.Footer>
         </Modal>
     );
 }

@@ -160,6 +160,12 @@ p {
   }
 }
 
+a {
+  transition: all .6s ease;
+  font-family: var(--FontFamily_Oxygen);
+  text-decoration: none;
+}
+
 // ======****header****======
 .header {
   background-color: var(--blackColor1);
@@ -179,7 +185,7 @@ p {
 
         &::after {
           width: 60%;
-        } 
+        }
       }
 
       &::after {
@@ -198,9 +204,66 @@ p {
   }
 }
 
+h1.mainTitle {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
 // ======****.modal****======
 .modal {
+  .modal-header {
+    border-bottom: none;
+  }
+
   .modal-content {
+    border: navajowhite;
     border-radius: 0;
+  }
+
+  .contentModol {
+    .infotext {
+      font-size: 20px;
+      color: var(--pragraphColor);
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--blackColor1);
+    }
+  }
+}
+
+// ======****.modal****======
+.investmentsUL {
+  h4.topTile {
+    font-size: 30px;
+    color: var(--pragraphColor);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--blackColor1);
+  }
+
+  .boxesUL {
+    h5.nextTitle {
+      font-weight: bold;
+      font-size: 16px;
+      transition: all .6s ease;
+      color: var(--blackColor1);
+    }
+
+    .linkBox {
+      transition: all .6s ease;
+      border: solid 1px var(--Color1);
+      border-radius: 10px;
+      background-color: var(--whiteColor);
+
+      &:hover {
+        background-color: #f7f7f7;
+
+        h5.nextTitle {
+          color: var(--mainColor);
+        }
+      }
+    }
   }
 }
