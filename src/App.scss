@@ -2,6 +2,7 @@
 
 :root {
   --FontFamily_Oxygen: 'Oxygen', sans-serif;
+  --FontFamily_NeoGramExtended: 'NeoGramExtended', sans-serif;
   --mainColor: #6687ba;
   --secondaryColor: #162238;
   --darkgreenColor: #0D210C;
@@ -204,6 +205,7 @@ a {
   }
 }
 
+// 
 h1.mainTitle {
   font-size: 48px;
   line-height: 58px;
@@ -221,6 +223,54 @@ h1.mainTitle {
 @media(max-width:768px) {
   .mainTitle {
     font-size: 26px !important;
+  }
+}
+
+// 
+h5.ComTitle {
+  font-size: 62px;
+  line-height: normal;
+  font-family: var(--FontFamily_NeoGramExtended);
+  font-weight: bold;
+  color: var(--secondaryColor);
+}
+
+@media(max-width:991px) {
+  h5.ComTitle {
+    font-size: 30px !important;
+    line-height: normal !important;
+  }
+}
+
+@media(max-width:768px) {
+  h5.ComTitle {
+    font-size: 26px !important;
+  }
+}
+
+.tag {
+  padding: 8px 16px;
+  border-radius: 100px;
+  margin-bottom: 25px;
+  border: 1px solid var(--Color2);
+  background-color: var(--whiteColor);
+  display: inline-block;
+}
+
+.text-slider {
+  p {
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--secondaryColor);
+  }
+}
+
+@media (max-width:991px) {
+  .text-slider {
+    p {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -295,4 +345,38 @@ h1.mainTitle {
       text-decoration: underline !important;
     }
   }
+}
+
+// 
+@font-face {
+  font-family: "NeoGram Extended W00 Bold";
+  src: url("./font/fbf651dfb6f1b93c7b3b603032ea0438.eot");
+  src: url("./font/fbf651dfb6f1b93c7b3b603032ea0438.woff")format("woff"),
+    url("./font/fbf651dfb6f1b93c7b3b603032ea0438.woff2")format("woff2"),
+    url("./font/fbf651dfb6f1b93c7b3b603032ea0438.ttf")format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+/*-----------------------webkit-scrollbar----------------------*/
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-left: 0 solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mainColor);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mainColor);
+  opacity: 1;
 }
