@@ -10,7 +10,7 @@ const Philosophy = () => {
     <>
       <section className='py-5 mt-lg-5'>
         <Col xl={'8'} lg={'9'} className='mx-auto col-11'>
-          <Row className={''}>
+          <Row className={''} data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">
             <Col xl={'6'} lg={'6'} className='mb-3 mb-lg-0'>
               <h1 className='mainTitle'>Investing is <strong>legacy.</strong></h1>
             </Col>

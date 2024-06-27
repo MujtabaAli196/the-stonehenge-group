@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 // import comonents
 import MAUL from '../components/MAUL';
@@ -68,8 +68,8 @@ const About = () => {
     <>
       <section className='py-5 mt-lg-5'>
         <Col xl={'8'} lg={'9'} className='mx-auto col-11'>
-          <div className='mb-5'>
-            <h1 className='mb-4 mainTitle'>Advisory</h1>
+          <div className='mb-5' data-aos-delay="100" ta-aos-duration="600" data-aos="fade-up">
+            <h1 className='mb-4 mainTitle' data-aos-delay="100" ta-aos-duration="600" data-aos="fade-up">Advisory</h1>
             <p>Spartan Advisory was founded with a mission to bring together best practices from traditional finance with the innovation and creativity from the wider Web3 community. We have worked with some of the world’s leading Web3 projects, corporates and tech companies to meet their financial and capital market needs.</p>
             <p>We are the most active and innovative dedicated dealmaker in the Web3 industry. Our core services include M&A, restructuring and capital raising.</p>
             <p>We deliver strategic solutions to the best founders in Web3.</p>
@@ -77,8 +77,8 @@ const About = () => {
           <strong className='d-block blackText1 mb-4' style={{ fontSize: '14px' }}>OUR CLIENTS</strong>
           {/*  */}
           <div className='investmentsUL mb-5'>
-            <h4 className='topTile mb-3'>M&A</h4>
-            <Row className='boxesUL'>
+            <h4 className='topTile mb-3' data-aos-delay="100" ta-aos-duration="600" data-aos="fade-up">M&A</h4>
+            <Row className='boxesUL' data-aos-delay="100" ta-aos-duration="600" data-aos="fade-up">
               {MAULArray.map((val) => {
                 return (
                   <MAUL
@@ -94,8 +94,8 @@ const About = () => {
           </div>
           {/*  */}
           <div className='investmentsUL mb-5'>
-            <h4 className='topTile mb-3'>Capital Raises</h4>
-            <Row className='boxesUL'>
+            <h4 className='topTile mb-3' data-aos-delay="100" ta-aos-duration="600" data-aos="fade-up">Capital Raises</h4>
+            <Row className='boxesUL' data-aos-delay="100" ta-aos-duration="600" data-aos="fade-up">
               {MetaverseULArray.map((val) => {
                 return (
                   <MetaverseUL

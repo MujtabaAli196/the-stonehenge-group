@@ -77,17 +77,17 @@ const Portfolio = () => {
     <>
       <section className='py-5 mt-lg-5'>
         <Col xl={'8'} lg={'9'} className='mx-auto col-11'>
-          <div className='mb-5'>
+          <div className='mb-5' data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">
             <h1 className='mb-4 mainTitle'>Asset Management</h1>
             <p>Spartan Capital is a digital asset management firm that takes a fundamental approach to identify unique investment opportunities in the emergent crypto asset class.</p>
             <p>Our investment team has over 20 years of experience in investment research and capital management for top-tier firms such as Goldman Sachs and Indus Capital</p>
             <p>We combine our deep fundamental approach with rigorous valuation analysis and robust risk management to generate superior risk-adjusted returns.</p>
           </div>
-          <strong className='d-block blackText1 mb-4' style={{ fontSize: '14px' }}>SELECT INVESTMENTS</strong>
+          <strong className='d-block blackText1 mb-4' style={{ fontSize: '14px' }} data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">SELECT INVESTMENTS</strong>
           {/*  */}
           <div className='investmentsUL mb-5'>
-            <h4 className='topTile mb-3'>DeFi</h4>
-            <Row className='boxesUL'>
+            <h4 className='topTile mb-3' data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">DeFi</h4>
+            <Row className='boxesUL' data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">
               {DeFiULArray.map((val) => {
                 return (
                   <DeFiUL
@@ -103,8 +103,8 @@ const Portfolio = () => {
           </div>
           {/*  */}
           <div className='investmentsUL mb-5'>
-            <h4 className='topTile mb-3'>Gaming & Metaverse</h4>
-            <Row className='boxesUL'>
+            <h4 className='topTile mb-3' data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">Gaming & Metaverse</h4>
+            <Row className='boxesUL' data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">
               {MetaverseULArray.map((val) => {
                 return (
                   <MetaverseUL
@@ -120,8 +120,8 @@ const Portfolio = () => {
           </div>
           {/*  */}
           <div className='investmentsUL mb-5'>
-            <h4 className='topTile mb-3'>Infrastructure</h4>
-            <Row className='boxesUL'>
+            <h4 className='topTile mb-3' data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">Infrastructure</h4>
+            <Row className='boxesUL' data-aos-delay="300" ta-aos-duration="600" data-aos="fade-up">
               {InfrastructureULArray.map((val) => {
                 return (
                   <InfrastructureUL

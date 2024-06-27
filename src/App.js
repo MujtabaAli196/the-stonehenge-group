@@ -10,7 +10,12 @@ import Portfolio from './pages/Portfolio';
 
 // import CSS files
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "../node_modules/aos/dist/aos.css";
 import './App.scss';
+
+import "../node_modules/jquery/dist/jquery.js";
+import "../node_modules/aos/dist/aos.js";
+import "./js/script.js";
 
 const App = () => (
   <>
