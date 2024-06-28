@@ -346,6 +346,54 @@ h5.ComTitle {
     }
   }
 }
+@media(max-width:991px){
+  .footer{
+    h6.fTitle{
+      font-size: 18px;
+    }
+    .linkF {
+      font-size: 18px !important;
+    }
+  }
+}
+
+/* headeroffcanvas */
+.headeroffcanvas {
+	width: 300px !important;
+	.offcanvas-header {
+		background: var(--whiteColor);
+		position: relative;
+		padding: 15px 1rem;
+		border-top: solid 3px var(--mainColor);
+		border-bottom: solid 1px var(--Color1);
+		.btn-close {
+			background-color:var(--whiteColor);
+			border-radius: 100px;
+			padding: 10px;
+			&:hover {
+				background-color: var(--whiteColor);
+			}
+			&:focus {
+				background-color: var(--whiteColor);
+			}
+		}
+		h4 {
+			font-size: 16px;
+			font-weight: 500;
+			color: var(--Color1);
+		}
+		h5 {
+			font-size: 16px;
+			font-weight: 500;
+			color: var(--Color1);
+		}
+		h6 {
+			font-size: 16px;
+			font-weight: 500;
+			color: var(--Color1);
+		}
+	}
+}
 
 // 
 @font-face {

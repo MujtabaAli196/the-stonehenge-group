@@ -8,7 +8,7 @@ const Home = () => {
     <>
       <section className='py-5 mt-lg-5'>
         <Col xl={'9'} lg={'9'} className='mx-auto col-11'>
-          <Row className='mb-5 pb-5 align-items-center'>
+          <Row className='mb-lg-5 pb-lg-5 align-items-center'>
             <Col xl={'6'} lg={'6'} className='text-center mb-4 mb-lg-0'><img className='img-fluid' src={animateImg} alt='icon' /></Col>
             <Col xl={'6'} lg={'6'} className=''>
               <span className='tag'>SSLE</span>

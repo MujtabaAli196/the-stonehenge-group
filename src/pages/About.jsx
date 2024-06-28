@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // import comonents
 import MAUL from '../components/MAUL';
@@ -110,8 +110,10 @@ const About = () => {
             </Row>
           </div>
           {/*  */}
-          <p className='mb-2' style={{fontSize:'10px'}}>Spartan Group (registered entity 99 Duxton Pte. Ltd.) is operating a business that falls within the definition of an “exempt person” pursuant to the requirements under the Securities and Futures (Licensing and Conduct of Business) Regulations (Rg 10) [the ’SFR’]. An “exempt person” means a person exempted from holding a capital markets services licence under paragraph 3(1)(d), 3A(1)(d) 5(1)(d) or 7(1)(b) of the Second Schedule to the SFR. An exempt person providing corporate finance advisory services is only permitted to serve accredited investors, expert investors or institutional investors, and is exempted from licensing and business conduct requirements under the Securities and Futures Act and the relevant regulations.</p>
-          <Link className='m-0 pragraphText' style={{fontSize:'10px'}} to={'https://eservices.mas.gov.sg/fid/institution/detail/221987-99-DUXTON-PTE-LTD'}>https://eservices.mas.gov.sg/fid/institution/detail/221987-99-DUXTON-PTE-LTD</Link>
+          <div data-aos-delay="100" ta-aos-duration="600" data-aos="fade-up">
+            <p className='mb-2' style={{ fontSize: '10px' }}>Spartan Group (registered entity 99 Duxton Pte. Ltd.) is operating a business that falls within the definition of an “exempt person” pursuant to the requirements under the Securities and Futures (Licensing and Conduct of Business) Regulations (Rg 10) [the ’SFR’]. An “exempt person” means a person exempted from holding a capital markets services licence under paragraph 3(1)(d), 3A(1)(d) 5(1)(d) or 7(1)(b) of the Second Schedule to the SFR. An exempt person providing corporate finance advisory services is only permitted to serve accredited investors, expert investors or institutional investors, and is exempted from licensing and business conduct requirements under the Securities and Futures Act and the relevant regulations.</p>
+            <Link className='m-0 pragraphText' style={{ fontSize: '10px' }} to={'https://eservices.mas.gov.sg/fid/institution/detail/221987-99-DUXTON-PTE-LTD'}>https://eservices.mas.gov.sg/fid/institution/detail/221987-99-DUXTON-PTE-LTD</Link>
+          </div>
         </Col>
       </section>
     </>
